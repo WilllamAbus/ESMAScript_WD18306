@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+</head>
+<body>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin: 20px;
+        }
+  
+        .result {
+          margin-top: 20px;
+        }
+      </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var arr = [1, 2, 3, 4, 5, 6, 7];
+
+// Sử dụng arrow function để tính tổng các phần tử trong mảng
+        const sumArray = arr => arr.reduce((total, current) => total + current, 0);
+
+
+             
+
+       
+          
+       // Hiển thị kết quả trong HTML
+       document.getElementById('resultParagraph').innerText = `Kết quả mong muốn: [${sumArray(arr)}]`;
+     });
+         
+      
+     
+       </script>
+
+<div class="result">
+    <h2>Bài 2 - Lab 3:</h2>
+    <p id="resultParagraph"></p>
+  </div>
+</body>
+</html>
